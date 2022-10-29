@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+</head>
+<body>
+    <h1>Base de datos de Ángel Suárez Pérez - Mongo</h1>
+    <p>A continuación veremos el número de registro de las revistas junto con su título<p>
+    {% for revista in all_revista -%}
+    <div>
+       <p>- {{"NumReg: ", revista['numreg'],"Titulo: ", revista['titulo']}}<p>
+    </div>
+    {% endfor -%}
+</body>
+</html>
